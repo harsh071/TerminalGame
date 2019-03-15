@@ -96,7 +96,7 @@ public class Hacker : MonoBehaviour
 
     void runPassword(string input) {
         password = input;
-        if (string.Equals(password, "Harsh"))
+        if (string.Equals(password, "Harsh") || string.Equals(password, "Harsh Patel"))
         {
             Terminal.WriteLine("Congratulation You have entered the correct password. ");
             currentScreen = Screen.win;
