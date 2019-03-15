@@ -76,7 +76,7 @@ public class Hacker : MonoBehaviour
     void startGame()
     {
         Terminal.ClearScreen();
-        Terminal.WriteLine("You have selected LEVEL:" + level);
+        Terminal.WriteLine("You have selected LEVEL :" + level);
         currentScreen = Screen.Password;
         if (level == 1)
         {
@@ -99,8 +99,11 @@ public class Hacker : MonoBehaviour
         if (string.Equals(password, "Harsh") || string.Equals(password, "Harsh Patel"))
         {
             Terminal.WriteLine("Congratulation You have entered the correct password. ");
+            Terminal.WriteLine("Congratulation You have entered the correct password. ");
+
             currentScreen = Screen.win;
             Terminal.WriteLine("Press any key then enter to play again.");
+            
 
         }
         else {
